@@ -1,7 +1,15 @@
 package org.example;
 
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
+        TokenGenerator tokenGenerator = new TokenGenerator();
+
+        try {
+            tokenGenerator.generateToken();
+        } catch (Exception e) {
+            tokenGenerator.printAlert();
+        }
     }
 }
