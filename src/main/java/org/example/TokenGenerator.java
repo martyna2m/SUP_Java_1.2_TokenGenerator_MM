@@ -10,7 +10,7 @@ public class TokenGenerator {
 
     public void generateToken() throws InputMismatchException {
 
-        welcomeToTheGame();
+        printInstruction();
         int charNumber = scan.nextInt();
 
         String token = rand.ints(33, 123)
@@ -29,7 +29,7 @@ public class TokenGenerator {
     }
 
 
-    private void welcomeToTheGame() {
+    private void printInstruction() {
         System.out.println("Choose the number of characters in your token: 5, 10, or 15");
     }
 
